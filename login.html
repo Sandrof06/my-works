@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTR Quads - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <img src="assets/images/logo.png" alt="LTR Logo">
+            <h1>Bem-vindo de volta</h1>
+            <p>Faça login para acessar sua conta</p>
+        </div>
+        
+        <div class="login-body">
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    <div class="error-message" id="email-error">Por favor, insira um email válido</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" placeholder="Sua senha" required>
+                        <span class="toggle-password" id="togglePassword">👁️</span>
+                    </div>
+                    <div class="error-message" id="password-error">A senha deve ter pelo menos 6 caracteres</div>
+                </div>
+                
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Lembrar-me</label>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="recuperar-senha.html">Esqueceu a senha?</a>
+                    </div>
+                </div>
+                
+                <button type="submit" class="login-button">Entrar</button>
+                
+                <div class="divider">
+                    <span>OU</span>
+                </div>
+                
+                <div class="social-login">
+                    <div class="social-btn" title="Entrar com Google">
+                        <img src="assets/icons/google.png" alt="Google">
+                    </div>
+                    <div class="social-btn" title="Entrar com Facebook">
+                        <img src="assets/icons/facebook.png" alt="Facebook">
+                    </div>
+                    <div class="social-btn" title="Entrar com Apple">
+                        <img src="assets/icons/apple.png" alt="Apple">
+                    </div>
+                </div>
+                
+                <div class="register-link">
+                    <p>Não tem uma conta? <a href="registro.html">Cadastre-se</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

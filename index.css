@@ -1,0 +1,72 @@
+    /* Estilo geral */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+    }
+
+    /* Navegação */
+    nav {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    #logo {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        cursor: pointer;
+    }
+
+    /* Galeria de imagens */
+    .galeria {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+        flex-wrap: wrap; /* Responsivo */
+    }
+
+    .galeria img {
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    html {
+        scroll-behavior: auto;
+    }
+
+    section {
+        min-height: 100vh;  /* Faz cada seção ocupar pelo menos a altura da tela */
+        padding: 20px;
+    }
+    #sobre{
+        background-color: black;
+        font-style: italic;
+        color: white;
+    }
+    #footer{
+        padding: 40px 20px;
+                display: flex;           /* Ativa Flexbox */
+                justify-content: space-between;  /* Distribui o espaço entre os itens */
+                align-items: flex-start; /* Alinha os itens no topo */
+                flex-wrap: wrap;         /* Permite quebra de linha em telas pequenas */
+                gap: 30px;
+    }
+
